@@ -1,0 +1,37 @@
+# Configuration du site
+title: "Votre Nom - Data Management Specialist"
+email: votre.email@example.com
+description: >- 
+  Data Management Specialist avec expérience au MINSANTE. Spécialiste en données 
+  de santé publique, données géospatiales et gouvernance des données.
+baseurl: ""
+url: "https://votreusername.github.io"
+twitter_username: ""
+github_username: votreusername
+linkedin_username: votreprofil
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Navigation
+header_pages:
+  - index.md
+  - projects.md
+  - contact.md
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      author: "Votre Nom"
