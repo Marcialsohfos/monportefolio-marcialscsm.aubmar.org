@@ -1,0 +1,43 @@
+# Informations personnelles
+name: "Votre Nom Complet"
+title: "Data Management Specialist"
+location: "Yaoundé, Cameroun"
+email: "votre.email@example.com"
+phone: "+237 6XX XXX XXX"
+
+# Réseaux sociaux
+social:
+  linkedin: "https://linkedin.com/in/votreprofil"
+  github: "https://github.com/votreusername"
+  twitter: ""
+
+# Compétences
+skills:
+  programming:
+    - name: "Python"
+      level: 5
+    - name: "R"
+      level: 5
+    - name: "SQL"
+      level: 5
+    - name: "JavaScript"
+      level: 3
+  
+  tools:
+    - name: "Qgis"
+      level: 5
+    - name: "Power BI"
+      level: 4
+    - name: "Tableau"
+      level: 4
+    - name: "Kobocollect"
+      level: 5
+    - name: "MapitGit"
+      level: 4
+  
+  domains:
+    - "Santé publique"
+    - "Données géospatiales"
+    - "Gouvernance des données"
+    - "RGPD"
+    - "ETL"
