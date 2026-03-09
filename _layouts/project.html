@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+    <div class="project-meta">
+      <span class="project-date">{{ page.date | date: "%B %Y" }}</span>
+      {% if page.client %}
+      <span class="project-client">Client: {{ page.client }}</span>
+      {% endif %}
+    </div>
+    <div class="project-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="project-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <div class="project-navigation">
+    <a href="{{ '/projects' | relative_url }}">← Retour aux projets</a>
+  </div>
+</article>
+
+<style>
+.project-header {
+  margin-bottom: 2rem;
+}
+.project-meta {
+  color: #586069;
+  margin: 1rem 0;
+}
+.project-date, .project-client {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.project-image {
+  margin: 2rem 0;
+}
+.project-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.project-content {
+  line-height: 1.8;
+}
+.project-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaecef;
+}
+.project-content ul, .project-content ol {
+  margin-left: 1.5rem;
+}
+.project-navigation {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaecef;
+}
+</style>
